@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom-select.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <title>register</title>
+</head>
+
+<body>
+
+    <!-- Main logo ============================== -->
+    <section class="main">
+        <div class="auto_container">
+            <div class="main_wrap">
+                <div class="logo">
+                    <img src="assets/images/logo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main logo end ========================== -->
+
+    <!-- Forget password =========================== -->
+    <section class="forget">
+        <div class="auto_container">
+            <div class="forget_wrap">
+                <div class="content_body">
+                    <h2 class="content_title">
+                        Bem-vindo,
+                    </h2>
+                    <h6 class="content_sub-title">
+                        Faça o login para continuar
+                    </h6>
+
+                    <form action="#" class="form">
+
+                        <div class="input_row">
+                            <div class="form_input">
+                                <label for="name">nome</label>
+                                <input type="text" id="name" placeholder="Sergio">
+                            </div>
+
+                            <div class="form_input">
+                                <label for="l-name">sobrenome</label>
+                                <input type="text" id="l-name" placeholder="Junior">
+                            </div>
+                        </div>
+
+                        <div class="form_input">
+                            <label for="mail">e-mail</label>
+                            <input type="text" id="mail" placeholder="exemplo@outlook.com">
+
+                            <span class="error_text">
+                                Este endereço de email não é válido
+                            </span>
+                        </div>
+
+                        <div class="form_input">
+                            <label for="pass">senha</label>
+                            <input type="text" id="pass"
+                                placeholder="&#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf;">
+                            <span class="error_text">
+                                Mín. 8 caracteres, um especial (?, #, $…) e um número.
+                            </span>
+                            <span class="input_icon">
+                                <img src="assets/images/svg/icone-eye.svg" alt="eye-icon">
+                            </span>
+                        </div>
+
+                        <div class="form_input">
+                            <label for="pass-2">confirmar senha</label>
+                            <input type="text" id="pass-2"
+                                placeholder="&#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf; &#x25cf;">
+                            <span class="error_text">
+                                As senhas não são compatíveis
+                            </span>
+                            <span class="input_icon">
+                                <img src="assets/images/svg/icone-eye.svg" alt="eye-icon">
+                            </span>
+                        </div>
+
+                        <div class="form_input">
+                            <div class="custom-select">
+                                <select>
+                                    <option value="1">Facebook</option>
+                                    <option value="2">Google</option>
+                                    <option value="3">Twitter</option>
+                                    <option value="4">Instagram</option>
+                                </select>
+                            </div>
+                            <span class="error_text">
+                                Código inválido
+                            </span>
+                        </div>
+
+                        <button type="submit" class="submit_btn">
+                            Cadastrar
+                        </button>
+                    </form>
+
+                    <div class="register_link">
+                        Já tenho cadastro, <a href="#">fazer login</a>
+                    </div>
+
+                    <p class="footer_text">
+                        Ao prosseguir você estará de acordo com nossos <span> Termos de Uso e Política de
+                            Privacidade.</span>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Forget password end ======================= -->
+
+    <!-- Pop up  ========================== -->
+    <section class="modal ">
+        <div class="modal_inner">
+            <form action="#" class="modal_form">
+                <h3 class="modal_title">
+                    Confirmar endereço de email?
+                </h3>
+
+                <a href="#" class="modal_link">
+                    sergioemjr@yahoo.com
+                </a>
+
+                <div class="modal_buttons">
+                    <button class="cancel_btn">
+                        Voltar
+                    </button>
+                    <button class="save_btn">
+                        Confirmar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Pop up end ======================= -->
+
+    <script src="assets/js/custom-select.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

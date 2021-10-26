@@ -1,0 +1,94 @@
+
+
+/* Custom select ============= */
+.custom-select {
+    position: relative;
+    width: calc(100% - 41px);
+    padding: 0px 25px 0px 10px;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    background: transparent;
+    border: 3px solid #fff;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected {
+    /* background-color: #f9f9f9; */
+    color: #fff;
+    padding: 15px 50px 15px 10px;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 20%;
+    right: 10px;
+    transform: rotate(180deg) translateY(-50%);
+    -ms-transform: rotate(180deg) translateY(-50%);
+    -moz-transform: rotate(180deg) translateY(-50%);
+    -o-transform: rotate(180deg) translateY(-50%);
+    -webkit-transform: rotate(180deg) translateY(-50%);
+    background: url("../images/svg/drop.svg") no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+
+    transition: all .2s linear;
+}
+
+.select-selected.select-arrow-active:after {
+    transform: translateY(50%) rotate(360deg);
+    -ms-transform: translateY(50%) rotate(360deg);
+    -moz-transform: translateY(50%) rotate(360deg);
+    -o-transform: translateY(50%) rotate(360deg);
+    -webkit-transform: translateY(50%) rotate(360deg);
+}
+
+.select-items div,
+.select-selected {
+    color: #C5C5C5;
+    cursor: pointer;
+}
+
+.select-items div {
+    padding: 5px;
+    border-radius: 3px;
+
+    transition: all .1s linear;
+    -ms-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+}
+
+.select-items {
+    position: absolute;
+    background-color: #893FD8;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px 5px;
+
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background: #7422cc;
+}
+
+/* custom select ------------- */

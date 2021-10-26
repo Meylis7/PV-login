@@ -1,0 +1,411 @@
+.forget {
+    background: #4B0B90;
+    min-height: calc(100vh - 100px);
+    position: relative;
+    padding-top: 50px;
+}
+
+.forget::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(0 0, 0 34%, 100% 0);
+    -ms-clip-path: polygon(0 0, 0 34%, 100% 0);
+    -moz-clip-path: polygon(0 0, 0 34%, 100% 0);
+    -o-clip-path: polygon(0 0, 0 34%, 100% 0);
+    -webkit-clip-path: polygon(0 0, 0 34%, 100% 0);
+    background: #fff;
+}
+
+
+.forget::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 330px;
+    height: 250px;
+    background: url("../images/svg/top.svg") no-repeat center;
+    background-size: contain;
+    /* z-index: -2; */
+}
+
+.forget_wrap {
+    position: relative;
+    z-index: 2;
+
+    min-height: 60vh;
+}
+
+.content_body {
+    position: relative;
+}
+
+.main {
+    padding: 30px 0;
+}
+
+.logo {
+    width: 290px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+}
+
+.content_body {
+    padding: 50px 0;
+}
+
+.content_title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.content_sub-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.form_input {
+    position: relative;
+
+    margin-bottom: 15px;
+}
+
+.form_input label {
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    background: #4B0B90;
+    color: #fff;
+    padding: 2px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.form_input input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    color: #fff;
+    border: 3px solid #fff;
+    background: transparent;
+    width: calc(100% - 36px);
+}
+
+.form_input input::placeholder {
+    color: #ffff;
+}
+
+.input_icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.input_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+}
+
+.forget_pass {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: right;
+    display: block;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.submit_btn {
+    display: block;
+    background: #DD261D;
+    padding: 10px;
+    width: calc(100% - 0px);
+    max-width: 330px;
+    border: 1px solid #FF362A;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+
+    margin: 30px auto 10px auto;
+    text-align: center;
+}
+
+.register_link {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    display: block;
+    color: #fff;
+    text-align: center;
+    margin: 45px 0 50px;
+}
+
+.register_link a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.footer_text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+}
+
+.footer_text span {
+    font-weight: 900;
+}
+
+
+/* Modal pop up ============== */
+
+.input_row {
+    display: flex;
+    align-items: center;
+    margin: 0 -5px 10px;
+}
+
+.input_row .form_input {
+    width: calc(50% - 10px);
+    margin: 0 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+
+    display: none;
+}
+
+.modal.active {
+    display: block;
+}
+
+.modal_inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    background: #fff;
+    border-radius: 10px;
+    padding: 24px 20px 15px 20px;
+    width: 300px;
+
+    text-align: center;
+}
+
+.modal_title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.modal_link {
+    display: block;
+    color: #4B0B90;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-decoration: underline;
+}
+
+.modal_text {
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.modal_icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 15px auto;
+}
+
+.modal_icon svg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
+}
+
+.modal_submit {
+    width: 80%;
+    display: block;
+    background: #FC4022;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px 5px 5px;
+    cursor: pointer;
+}
+
+
+/* Error =========== */
+
+.form_input.error input {
+    border-color: #DD261D;
+}
+
+.error_text {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #DD261D;
+    margin-top: 5px;
+    display: none;
+}
+
+.form_input.error .error_text {
+    display: block;
+}
+
+.login_link {
+    text-decoration: underline;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+    text-align: center;
+    color: #fff;
+    margin-top: 60px;
+    display: block;
+}
+
+
+/* Medai Query ====================== */
+
+@media screen and (max-width: 750px) {
+    .auto_container {
+        padding: 0 20px;
+    }
+
+    .forget::before {
+        height: 125px;
+        top: -2px;
+        width: calc(100% + 0px);
+    }
+
+    .main {
+        padding: 15px 0;
+    }
+
+    .forget::after {
+        width: 230px;
+        height: 175px;
+    }
+
+    .form {
+        position: relative;
+        z-index: 4;
+    }
+
+    .content_body {
+        height: 70vh;
+    }
+
+    .login_link {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+
+    .content_title {
+        margin-top: 70px;
+    }
+
+    .content_sub-title {
+        margin-bottom: 50px;
+    }
+
+    .form_input {
+        margin-bottom: 60px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        width: 230px;
+    }
+
+    .forget {
+        min-height: calc(100vh - 95px);
+        padding-top: 25px;
+    }
+
+    .forget::before {
+        height: 60px;
+        top: -1px;
+        clip-path: polygon(0 0, 0 50%, 100% 0);
+        -ms-clip-path: polygon(0 0, 0 50%, 100% 0);
+        -moz-clip-path: polygon(0 0, 0 50%, 100% 0);
+        -o-clip-path: polygon(0 0, 0 50%, 100% 0);
+        -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
+    }
+
+    .register_link {
+        margin: 25px 0;
+    }
+
+    /* 
+    .login_link {
+        margin-top: 30px;
+    } */
+
+}

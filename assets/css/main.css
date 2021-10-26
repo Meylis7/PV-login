@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+button {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/*** 
+====================================================================
+    Global Settings
+====================================================================
+***/
+
+body {
+    font-family: 'Univia Pro Ultra', sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.7em;
+    font-weight: 400;
+    background: #fff;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body.active {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    font-weight: normal;
+    margin: 0px;
+    background: none;
+    line-height: 1.6em;
+}
+
+/* Typography */
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+p {
+    position: relative;
+    line-height: 1.8em;
+}
+
+.auto_container {
+    max-width: 700px;
+    padding: 0px 40px;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
